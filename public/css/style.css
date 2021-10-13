@@ -99,10 +99,10 @@ h3,
 
 main{
     width: 90%;
-    display: flex;
-    flex-wrap: wrap;
+   
         /* flex-direction: column; */
 }
+
 
 main section div article div {
     border-top: solid #ebebeb 1px ;
@@ -124,7 +124,6 @@ main section article div i,
 }
 
 .linea {
-    border: blue solid 5px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -161,6 +160,41 @@ footer article{
     text-align: center;
 }
 
+main section{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.creater-form{
+    padding: 20px 15px;
+
+}
+.control-formulario{
+    margin-bottom: 15px;
+
+}
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario{
+    background-color: #39b54a;
+    border:none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+
 
 @media(max-width: 360px){
     .main-navbar{
@@ -180,16 +214,14 @@ footer article{
     .hamburguer-buttom{
         display: none;
 }
-main{
-    flex-wrap: nowrap;
+main section{
+    flex-wrap: wrap;
+    flex-basis: 50%; 
 }
 main section div article{
-    /* flex-basis: 50%; */
+   
     border: solid black 5px;
 }
-
-
-
 }
 
 @media(min-width:768px){
@@ -197,6 +229,7 @@ main section div article{
     main section div article{
         flex-basis: 15%;
     }
+}
 
 
 
