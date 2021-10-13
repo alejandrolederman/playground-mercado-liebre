@@ -164,7 +164,7 @@ main section article div i,
 
 }
 
-main section article div i{
+/* main section article div i{
     display: block;
     border-radius: 60px;
     border: #39b54a solid 1px;
@@ -172,7 +172,19 @@ main section article div i{
     padding: 10px; 
     right: 55px;
     position: center;
-}
+} */
+main section article i{ 
+    display: block; 
+    font-size: 16px; 
+    padding: 5px; 
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid #39b54a; 
+    background-color: #FFF; 
+    border-radius: 50%; 
+    right: 20px; 
+    }
+    
 
 footer article i{
     color: #1259c3;
@@ -185,6 +197,18 @@ footer article i{
 footer article{
     text-align: center;
 }
+
+/* article {
+     display: none;
+ } 
+
+@media(min-width: 361px){
+
+    main article{
+        display: inline;
+    
+    }
+} */
 
 @media(max-width: 360px){
     .main-navbar{
