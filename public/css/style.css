@@ -177,12 +177,25 @@ footer article{
 }
 
 .creater-form{
-    padding: 20px 15px;
+    padding: 20px 20px;
+    
 
 }
 
 .control-formulario{
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.control-formulario-perfil{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+
 }
 
 .control-formulario label{
@@ -192,8 +205,13 @@ footer article{
 }
 
 .control{
+
     width: 100%;
     padding: 8px;
+    margin: 15px;
+    border-radius: 10px;
+    
+    
 }
 
 .boton-formulario{
