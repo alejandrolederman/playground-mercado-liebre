@@ -37,8 +37,7 @@ header .form .input{
     border: 1px solid #000;
     outline: none;
     color: #666;
-    padding: 2px;
-    
+    padding: 2px;  
 }
 
 header .form .submit{
@@ -57,8 +56,7 @@ header .form .submit{
     border-radius: 8px;
     text-align: center;
     font-size: 18px;
-    margin: auto;
-    
+    margin: auto; 
 }
 
 .main-navbar ul{
@@ -99,10 +97,8 @@ h3,
 
 main{
     width: 90%;
-   
         /* flex-direction: column; */
 }
-
 
 main section div article div {
     border-top: solid #ebebeb 1px ;
@@ -112,6 +108,7 @@ main section div article div {
 main section article img{
     width: 100%;
 }
+
 main section div article{   
     background-color: #fff;
     margin: 10px;
@@ -129,6 +126,7 @@ main section article div i,
     align-items: flex-end;
     padding: 0;
 }
+
 .price{
     flex-grow: 0.3;
 }
@@ -142,12 +140,30 @@ main section article i{
     border: 1px solid #39b54a; 
     background-color: #FFF; 
     border-radius: 50%; 
-    order: 1;
-    
+    order: 1; 
+    margin-bottom: 15px; 
     /* align-self: flex-start; */
 }
-    
 
+.last-visit, .offers{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-self: center;
+
+}
+
+h3{
+    align-self: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+    
 footer article i{
     color: #1259c3;
     font-size: 2em;
@@ -160,20 +176,15 @@ footer article{
     text-align: center;
 }
 
-main section{
-    
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .creater-form{
     padding: 20px 15px;
 
 }
+
 .control-formulario{
     margin-bottom: 15px;
-
 }
+
 .control-formulario label{
     margin-bottom: 5px;
     font-style: italic;
@@ -194,40 +205,45 @@ main section{
     border-radius: 15px;
 }
 
-
-
 @media(max-width: 360px){
-    .main-navbar{
+    .main-navbar, .description{
         display: none;
     }  
-      
-    .description{
-        display: none;
-    }
-   
-}
+} 
 
 @media(min-width:360px){
     main section div article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100); 
-}
+    }
+
     .hamburguer-buttom{
         display: none;
-}
-main section{
-    flex-wrap: wrap;
-    flex-basis: 50%; 
-}
-main section div article{
-   
-    border: solid black 5px;
-}
-}
-
-@media(min-width:768px){
+    }
 
     main section div article{
-        flex-basis: 15%;
+        flex-basis: 5%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+@media (min-width: 570px){
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;   
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+}
+
+@media(min-width: 1200px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin: auto;       
     }
 }
 
@@ -285,4 +301,5 @@ main section div article{
         display: inline;
     
     }
-} */
+}
+*/
