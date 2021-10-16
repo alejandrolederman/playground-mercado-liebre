@@ -32,21 +32,30 @@
 
             <input type="text" name="domicilio" placeholder="Domicilio" class="control">
         </div> 
-        <div class="control-formulario-perfil">
-            <label>Perfil del usuario  </label>
-
-            <input type="radio" name="comprador">
-
-            <input type="radio" name="vendero">
+        <div>
+            <h2>Perfil del usuario</h2>
+        </div>
+        <div class="control-formulario-perfil">           
+            <input type="radio" name="comprador" value="Comprador">
+            <label>comprador  </label>            
+            <input type="radio" name="vendero" value="Vendedor">
+            <label>vendedor</label>
         </div> 
 
-        <div class="control-formulario">
-            <!-- <label>Perfil del usuario </label> -->
-            <select name="categoria" class="control">
-                 <option value="">Hogar</option>
-                 <option value="">Electro</option>
-                 <option value="">Indumentaria</option>
-            </select>
+        <h2>intereses</h2>
+
+        <div class="control-formulario-interes">
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Electro</label>
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Moda</label>
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Hogar</label>
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Juguetería</label>
+             <input type="checkbox" name="intereses" value="moda">
+             <label>Vida sana </label>
+             
         </div>
         <div class="control-formulario"> 
             <label>descripcion: </label>
