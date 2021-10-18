@@ -11,6 +11,10 @@ app.listen(3001, ()=>{
 //     res.sendFile(__dirname + '/views/home.html');
 // });
 
+// app.get('/', (req,res)=>{
+//     res.sendFile(__dirname + '/views/register.html');
+// });
+
 app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/register.html');
+    res.sendFile(__dirname + '/views/login.html');
 });

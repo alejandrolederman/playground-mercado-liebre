@@ -192,11 +192,14 @@ footer article{
 
 .control-formulario-perfil{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+   justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
     align-content: center;
     margin: 20px 0;
     padding: 0 15%;
+}
+.perfil-comprador{
+    margin-right: 5px ;
 }
 
 .control-formulario-interes{
@@ -205,31 +208,29 @@ footer article{
     flex-direction: column;
     margin: 20px 0;  
 }
+
 .control-formulario-interes input{
     text-align: center;
 }
 
 .control-formulario-interes label{
-    margin:15px 3px;
-    display: flex;
-    flex-wrap: wrap;
-
-    
+    margin:15px 3px; 
 }
 
 .control-formulario label{
     margin-bottom: 5px;
     font-style: italic;
-    display: block;
 }
 
 .control{
     width: 100%;
     padding: 8px;
     margin: 15px;
-    border-radius: 10px;
-    
-    
+    border-radius: 10px; 
+}
+
+.control-formulario-file{
+    margin: 15px 0;
 }
 
 .boton-formulario{
@@ -239,6 +240,7 @@ footer article{
     font-size: 20px;
     padding: 5px 10px;
     border-radius: 15px;
+    margin-right: 20px;
 }
 
 @media(max-width: 360px){

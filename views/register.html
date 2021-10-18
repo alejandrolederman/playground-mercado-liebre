@@ -24,49 +24,72 @@
             <input type="text" name="nombre" placeholder="Nombre y apellido" class="control">
             <input type="text" name="usuario" placeholder="Nombre de usuario" class="control">
             <input type="email" name="email" placeholder="E-mail" class="control">
-
         </div> 
+
         <div class="control-formulario">
             <label>Fecha de nacimiento: </label>
-            <input type="number" name="precio" placeholder="$000.000" class="control">
+            <input type="date" name="fecha" class="control">
 
             <input type="text" name="domicilio" placeholder="Domicilio" class="control">
         </div> 
+
         <div>
             <h2>Perfil del usuario</h2>
         </div>
-        <div class="control-formulario-perfil">           
-            <input type="radio" name="comprador" value="Comprador">
-            <label>comprador  </label>            
+
+        <div class="control-formulario-perfil"> 
+            <input type="radio" name="comprador" value="Comprador" >
+            <label class="perfil-comprador">comprador</label>          
             <input type="radio" name="vendero" value="Vendedor">
-            <label>vendedor</label>
+            <label class="perfil-comprador">vendedor</label>
         </div> 
 
         <h2>intereses</h2>
 
         <div class="control-formulario-interes">
+            <div class="div-checkbox">
              <input type="checkbox" name="intereses" value="moda">
              <label>Electro</label>
+            </div>
+
+            <div class="div-checkbox">
              <input type="checkbox" name="intereses" value="moda">
              <label>Moda</label>
+            </div>
+
+            <div class="div-checkbox">
              <input type="checkbox" name="intereses" value="moda">
              <label>Hogar</label>
+            </div>
+
+            <div class="div-checkbox">
              <input type="checkbox" name="intereses" value="moda">
              <label>Juguetería</label>
+            </div>
+
+             <div class="div-checkbox">
              <input type="checkbox" name="intereses" value="moda">
              <label>Vida sana </label>
-             
+            </div>
+
         </div>
-        <div class="control-formulario"> 
-            <label>descripcion: </label>
-            <textarea name="descripcion del producto" class="control" ></textarea>
+
+        <div class="control-formulario-file"> 
+            <label>Selecciones una foto de perfil: </label>
+            <input type="file" name="avatar" accept=".jpg">
         </div>
         
+        <div class="control-formulario">
+            <label>Constraseña</label>
+            <input type="password" name="clave" class="control">
+            <label>Confirmar constraseña</label>
+            <input type="password" name="clave" class="control">
+        </div>
+
         <button type="reset" class="boton-formulario">Borrar</button>
         <button type="submit"class="boton-formulario">Enviar</button>
-        
-        
         </form>
+
 </body>
 </html>
 
