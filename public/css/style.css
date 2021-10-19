@@ -22,9 +22,17 @@ h3{
     padding: 20px;
     font-size: 12px;
 }
+ section .mainLogo{
+    display: flex;
+    
+} 
 
 .logo{
     width: 200px;
+    flex-grow: 0.5;
+}
+div .input{
+    flex-grow: 0.5;
 }
 
 .copy-header{
@@ -143,6 +151,9 @@ h3{
 
 .price{
     flex-grow: 0.3;
+}
+.discount{
+    flex-grow: 0.7;
 }
 
 .last-visit, .offers{
