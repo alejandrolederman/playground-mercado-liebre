@@ -76,10 +76,6 @@ section.banner img{
     width: 100%;
 }
 
-article div.main-article{
-    width: 100%;
-}
-
 .price{
     font-size: 18px;   
 }
@@ -97,27 +93,41 @@ h3,
 
 main{
     width: 90%;
-        /* flex-direction: column; */
 }
 
-main section div article div {
+.main-article{
+    width: 100%;
     border-top: solid #ebebeb 1px ;
     padding: 15px;
 }
 
-main section article img{
+.product_img{
     width: 100%;
 }
 
 main section div article{   
     background-color: #fff;
     margin: 10px;
-    flex-basis: 100%;   
+    flex-basis: 100%;  
+    position: relative; 
 }
 
-main section article div i,
+.main-article i,
 .discount{
     color: #39b54a;
+}
+
+main section article i{  
+    font-size: 16px; 
+    padding: 5px; 
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid #39b54a; 
+    background-color: #FFF; 
+    border-radius: 50%; 
+    position: absolute;
+    left: 85%;
+    bottom: 10%;
 }
 
 .linea {
@@ -127,22 +137,12 @@ main section article div i,
     padding: 0;
 }
 
-.price{
-    flex-grow: 0.3;
+h3{
+    align-self: center;
 }
 
-main section article i{ 
-    display: block; 
-    font-size: 16px; 
-    padding: 5px; 
-    width: 30px; 
-    height: 30px; 
-    border: 1px solid #39b54a; 
-    background-color: #FFF; 
-    border-radius: 50%; 
-    order: 1; 
-    margin-bottom: 15px; 
-    /* align-self: flex-start; */
+.price{
+    flex-grow: 0.3;
 }
 
 .last-visit, .offers{
@@ -150,11 +150,6 @@ main section article i{
     flex-direction: column;
     align-content: center;
     justify-self: center;
-
-}
-
-h3{
-    align-self: center;
 }
 
 .products{
