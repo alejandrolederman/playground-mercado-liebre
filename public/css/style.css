@@ -22,22 +22,26 @@ h3{
     padding: 20px;
     font-size: 12px;
 }
- section .mainLogo{
+  header section{
     display: flex;
-    
-} 
+    align-items: center;
+}  
 
 .logo{
-    width: 200px;
-    flex-grow: 0.5;
-}
-div .input{
-    flex-grow: 0.5;
+    width: 80%;   
 }
 
 .copy-header{
     font-weight: 400;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header .form{
+    display: flex;
+    flex-grow: 0.6;
+       
 }
 
 header .form .input{
@@ -46,13 +50,17 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;  
+    width: 100%;
+    border-right: none;
 }
 
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    width: 10%;
+    width: 5%;
+    border-left: none;
+
 }
 
 .hamburguer-buttom{
@@ -133,9 +141,23 @@ main section article i{
     border: 1px solid #39b54a; 
     background-color: #FFF; 
     border-radius: 50%; 
-    position: absolute;
+    position: absolute; 
     left: 85%;
-    bottom: 10%;
+    bottom: 13%;
+    transition: 450ms;
+}
+
+main section div article:hover h4{
+    display: none;
+}
+main section div article:hover i{
+    transform:rotate(-90deg)
+}
+main section div article:hover{
+    box-shadow: 10px 20px 20px 0px rgb(189, 23, 23)
+}
+.boton-formulario:hover{
+    background:#0022aa;
 }
 
 .linea {
@@ -180,12 +202,15 @@ footer article i{
 
 footer article{
     text-align: center;
+    margin: 0 40px;
+}
+
+footer section{
+    margin-top: 50px;
 }
 
 .creater-form{
     padding: 20px 20px;
-    
-
 }
 
 .control-formulario{
@@ -249,6 +274,22 @@ footer article{
     margin-right: 20px;
 }
 
+.boton-formulario-login{
+    background-color: #39b54a;
+    border:none;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.boton-formulario-login:hover{
+    background:#0022aa;
+}
+
 @media(max-width: 360px){
     .main-navbar, .description{
         display: none;
@@ -269,6 +310,19 @@ footer article{
         flex-grow: 1;
         flex-shrink: 1;
     }
+
+    main section article i{  
+        font-size: 16px; 
+        padding: 5px; 
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid #39b54a; 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        position:absolute; 
+        left: 75%;
+        bottom: 25%;
+    }
 }
 
 @media (min-width: 570px){
@@ -282,13 +336,127 @@ footer article{
     .main-navbar li{
         margin: 0 5px;
     }
+
+     header .para-tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+
+    .form{
+        width: 100%;
+    }
+
 }
 
-@media(min-width: 1200px){
-    .main-header-top-bar, .main-navbar{
-        max-width: 1200px;
-        margin: auto;       
+@media(min-width:375px){
+    main section article i{  
+        font-size: 16px; 
+        padding: 5px; 
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid #39b54a; 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        position:absolute; 
+        left: 75%;
+        bottom: 35%;
     }
+}
+
+@media(min-width:425px){
+    main section article i{  
+        font-size: 16px; 
+        padding: 5px; 
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid #39b54a; 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        position:absolute; 
+        left: 75%;
+        bottom: 22%;
+    }
+}
+
+@media(min-width:641px){
+    main section article i{  
+        font-size: 16px; 
+        padding: 5px; 
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid #39b54a; 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        position:absolute; 
+        left: 75%;
+        bottom: 40%;
+    }
+
+}
+
+@media(min-width: 768px){
+    footer div{
+        display: flex;
+    }
+
+    footer div article:hover i{
+        color: red;
+    }
+
+    main section article i{  
+        font-size: 16px; 
+        padding: 5px; 
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid #39b54a; 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        position:absolute; 
+        left: 75%;
+        bottom: 35%;
+    }
+
+
+
+}
+
+
+@media(min-width: 1199px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;     
+    }
+
+    main section article i{  
+        font-size: 16px; 
+        padding: 5px; 
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid #39b54a; 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        position:absolute; 
+        left: 85%;
+        bottom: 18%;
+    }
+
+    
+}
+
+@media(min-width:1024px){
+    main section article i{  
+        font-size: 16px; 
+        padding: 5px; 
+        width: 30px; 
+        height: 30px; 
+        border: 1px solid #39b54a; 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        position:absolute; 
+        left: 75%;
+        bottom: 20%;
+    }
+
 }
 
 
