@@ -39,9 +39,7 @@ h3{
 }
 
 header .form{
-    display: flex;
-    flex-grow: 0.6;
-       
+    display: flex;      
 }
 
 header .form .input{
@@ -339,14 +337,20 @@ footer section{
 
      header .para-tablet{
         display: flex;
-        justify-content: space-between;
-        align-items: center;   
+       justify-content: space-around;
+        align-items: center;
+
+    }
+    .mainLogo{
+        flex-grow: 0.3;
+    }
+    h2 .copy-header{
+        margin-left: 5px;
     }
 
     .form{
         width: 100%;
     }
-
 }
 
 @media(min-width:375px){
@@ -416,11 +420,7 @@ footer section{
         left: 75%;
         bottom: 35%;
     }
-
-
-
 }
-
 
 @media(min-width: 1199px){
     .main-header-top-bar, .main-navbar{
@@ -439,8 +439,7 @@ footer section{
         left: 85%;
         bottom: 18%;
     }
-
-    
+   
 }
 
 @media(min-width:1024px){
