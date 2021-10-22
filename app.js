@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
  });
 
  app.get('/', (req,res)=>{
-    res.sendFile(__dirname + '/views/home.html');
+    res.sendFile(path.join(__dirname + '/views/home.html'));
  });
 
 //   app.get('/views/register.html', (req,res)=>{
