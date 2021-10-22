@@ -1,19 +1,23 @@
 {
-  "name": "mercado-liebre",
+  "name": "playground-mercado-liebre",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {},
-  "description": "",
-  
-    "start": "node tu-script-main.js"
-  }
-
-
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandrolederman/playground-mercado-liebre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejandrolederman/playground-mercado-liebre/issues"
+  },
+  "homepage": "https://github.com/alejandrolederman/playground-mercado-liebre#readme"
+}
